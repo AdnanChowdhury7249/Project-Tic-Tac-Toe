@@ -1,10 +1,10 @@
 # Tic Tac Toe
 
-A  web-based Tic Tac Toe game implemented in HTML, CSS, and JavaScript.
+A  web-based Tic Tac Toe game implemented in HTML, CSS, and JavaScript. This project highlights the use of factory functions and IIFE (Immediately Invoked Function Expression) in JavaScript. Factory functions are employed to create player objects, and an IIFE is used to create the GameBoard module, providing a structured and encapsulated design for the Tic Tac Toe game.
 
 ## Demo
 
-[View Demo](#) <!-- Add a link to the live demo if available -->
+[View Demo]
 
 ## Features
 
@@ -13,16 +13,6 @@ A  web-based Tic Tac Toe game implemented in HTML, CSS, and JavaScript.
 - Winning combinations highlighting.
 
 - - Web browser (Chrome, Firefox, Safari, etc.)
-
-### Installation
-
-1. Clone the repository:
-
-    ```bash
-    git clone https://github.com/yourusername/tic-tac-toe.git
-    ```
-
-2. Open `index.html` in your preferred web browser.
 
 ## Usage
 
