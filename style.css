@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: rgb(205, 243, 230);
+    font-family: arial black;
+}
+
+.game-title {
+    display: flex;
+    justify-content: center;
+    font-size: 2em;
+    margin-bottom: 100px;
+    font-weight: 600;
+    color: #02273f;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+.board {
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #4a6887;
+    color: #fff;
+    border: 6px solid #2c3e50;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    caret-color: transparent;
+}
+
+
+.box {
+    border: 6px solid #2c3e50;
+    border-radius: 2px;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size: 4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board .box.winning-box {
+    background-color: #2ecc71;
+    color: #fff;
+    transition: background-color 0.5s;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+
+}
+
+
+
+
+button {
+    padding: 12px 20px;
+    font-size: 16px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px;
+
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin: auto;
+    transition: opacity 0.5s;
+    background-color: rgba(0, 0, 0, 0.5);
+
+
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 20%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 30px;
+    transition: transform 0.5s;
+
+}
+
+.modal.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal.hidden .modal-content {
+    transform: scale(0);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
