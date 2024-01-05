@@ -4,7 +4,7 @@ A  web-based Tic Tac Toe game implemented in HTML, CSS, and JavaScript. This pro
 
 ## Demo
 
-[View Demo]
+[[View Demo](https://adnanchowdhury7249.github.io/Project-Tic-Tac-Toe/)]
 
 ## Features
 
